@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmug_atlas_search_workshop=self.webpackChunkmug_atlas_search_workshop||[]).push([[235],{8552:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

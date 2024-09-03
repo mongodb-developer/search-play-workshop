@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmug_atlas_search_workshop=self.webpackChunkmug_atlas_search_workshop||[]).push([[647],{7121:(s,e,r)=>{r.r(e),r.d(e,{default:()=>o});r(6540);var a=r(4164),u=r(1003),c=r(7559),h=r(2831),t=r(781),l=r(4848);function o(s){return(0,l.jsx)(u.e3,{className:(0,a.A)(c.G.wrapper.docsPages),children:(0,l.jsx)(t.A,{children:(0,h.v)(s.route.routes)})})}}}]);
