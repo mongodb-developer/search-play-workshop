@@ -1,4 +1,63 @@
 # Exercises: `compound`
 
-## 
+## minimumShouldMatch
 
+<Playground url="https://search-playground.corp.mongodb.com/tools/code-sandbox/snapshots/68ca7d929998a1882cce707c">🔗 Playground link: adjust minimumShouldMatch</Playground> 
+<details>
+  <summary>Solution</summary>
+  <div>
+    ```js
+    "minimumShouldMatch": 2
+    ```
+
+    Increase minimumShouldMatch to increase precision of results.
+  </div>
+</details>
+
+## filter
+
+You've got Products, each with a `name` and a `category`. A user is looking for accessories for a "camera", not actual cameras. Let's guide the user:
+
+<Playground url="https://search-playground.corp.mongodb.com/tools/code-sandbox/snapshots/68ca7ff59998a1882cce7080">🔗 Playground link: filter by category</Playground> 
+<details>
+  <summary>Solution</summary>
+
+  You might first try adding an `equals` on `category` within `compound.filter`:
+  <div>
+    ```js
+        filter: [
+          {
+            equals: {
+              path: "category",
+              value: "Accessories"
+            }
+          }
+        ]
+    ```
+  </div>
+
+  Which leads us to this, which isn't yet working:
+  <Playground url="https://search-playground.corp.mongodb.com/tools/code-sandbox/snapshots/68ca7f902af20a4fd56dbf22">🔗 Playground link: filter by category not working yet</Playground> 
+
+  Note the surprising effect of querying a path that was not indexed specifically for that operator!
+  
+  Using `equals` on a string field effectively requires that it be mapped as type `token`:
+  <div>
+    ```js
+      {
+        "mappings": {
+          "dynamic": true,
+          "fields": {
+            "category": [
+              {
+                "type": "token"
+              }
+            ]
+          }
+        }
+      }
+    ```
+  </div>
+
+  With this final solution: <Playground url="https://search-playground.corp.mongodb.com/tools/code-sandbox/snapshots/68ca7f009998a1882cce707e">🔗 Playground link: filter by category solution</Playground> 
+</details>

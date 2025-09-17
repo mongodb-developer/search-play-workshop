@@ -2,7 +2,7 @@
 
 ## `autocomplete`
 
-This seems an aluring one to run with, but understand that it uses some advanced Lucene analysis
+This seems like an appealing operator, but understand that it uses some advanced Lucene analysis
 techniques with shingling and ngramming that apply differently between index and search time. It's recommended to explore and understand the capabilities and limitations with other textual analysis configurations and query constructions and then come back to this one with good understanding of the tradeoffs of hyper-indexing to facilitate direct short query to index lookup to simpler indexing with more complex query-time searches.
 
 ## `text.fuzzy` options
@@ -11,8 +11,4 @@ A myriad of parameters. Just don't forget about mixing and matching different le
 
 ## `queryString` 
 
-yeah, why not!  TODO
-
-## `moreLikeThis`
-
-TODO
+The `queryString` operator is niche, using specialized, and brittle, syntax.  We strongly recommend using the other operators, in conjuction with `compound`, to build a robust query.

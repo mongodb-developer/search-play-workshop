@@ -11,7 +11,7 @@ See also: <Link to="https://www.mongodb.com/solutions/solutions-library/as-you-t
 
 ## partial matching
   * <Playground url="https://search-playground.corp.mongodb.com/tools/code-sandbox/snapshots/68a752755ec5d0d84cbffc3b">🔗 `regex`</Playground>
-  * `wildcard`: TODO
+  * `wildcard`: similar to `regex`
 
 ## `moreLikeThis`
 
@@ -28,12 +28,5 @@ https://search-playground.mongodb.com/tools/code-playground/snapshots/6683c8bc4a
 
 # `searchAnalyzer` vs. `analyzer` and which one is chosen when
 
-# Using scoreDetails to glimpse analysis in action:
-
-....
-
-# Configuration options on strings
-
-  * `storedSource`
-  * `synonyms`
-
+* generally use the same analyzer for both (by specifying *only* `analyzer`)
+* when index analysis emits multiple tokens per word, a different `searchAnalyzer` could be warranted

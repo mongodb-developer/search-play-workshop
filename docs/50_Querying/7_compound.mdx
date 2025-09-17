@@ -16,4 +16,4 @@ A `compound` operator holds these four sets of clauses, each an array of any oth
 
 If there's only a single `should` clause in all of a `compound`, it effectively becomes an implicit `must`.
 
-TODO: add some blurb about `minimumShouldMatch`
+When there are multiple `should` clauses, at least `minimumShouldMatch` of them must match; only one clause must match with a default `minimumShouldMatch` of 0.

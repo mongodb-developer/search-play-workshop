@@ -15,9 +15,6 @@ Results are returned in descending **score** order or in an optional `sort` orde
 
 ## $searchMeta
 
-TODO: It was mentioned that searchMeta perhaps doesn't warrant (much) coverage in this
-workshop. Perhaps only mention but do no cover?
-
 Returns a single document of search result metadata including count of matching documents
 and any facets requested. No actual collection documents are returned.
 
@@ -25,10 +22,11 @@ The `$searchMeta` stage performs the same search that `$search` does,
 but only returns the results metadata, not actual matching documents.
 Results metadata includes the count of matching results and facets.
 This same metadata is available when using `$search` too, 
-accessible in the $$SEARCH_META context variable.
+accessible in the `$$SEARCH_META` context variable.
 
 ## Post $search-stages
 
-  * Such as $sort, $group, etc any stage that consumes **all** documents from previous stage.
-  * $limit, $addFields, $project and the like are fine as they only operate on one doc at a time
+  * Warning: stages such as `$sort`, `$group`, and others will consumes **all** documents from previous stage
+    (and could be a performance issue)
+  * `$limit`, `$addFields`, `$project` and the like are fine as they only operate on one doc at a time
     or cut-off
