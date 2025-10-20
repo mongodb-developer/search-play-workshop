@@ -10,7 +10,7 @@ const organizationName = "mongodb-developer";
 
 // Main page config
 const title = "Atlas Search Fundamentals";
-const tagLine = "the workshop";
+const tagLine = "Hands-on workshop";
 const startButtonTitle = "Enter the Atlas Search Fundamentals Workshop";
 const favicon = "img/favicon.svg"
 
@@ -52,16 +52,12 @@ const footerLinks = [
     href: `https://www.mongodb.com/try?${utmParams}`,
   },
   {
+    label: 'Skill Badges',
+    href: `https://learn.mongodb.com/skills?team=devrel&${utmParams}`,
+  },
+  {
     label: "Forums",
-    href: `https://www.mongodb.com/community/forums/?${utmParams}`,
-  },
-  {
-    label: "Developer Center",
-    href: `https://www.mongodb.com/developer/?${utmParams}`,
-  },
-  {
-    label: "MongoDB University",
-    href: `https://learn.mongodb.com/?${utmParams}`,
+    href: `https://www.mongodb.com/community/forums?${utmParams}`,
   },
   {
     href: `https://github.com/${organizationName}/${workshopName}`,
@@ -128,14 +124,6 @@ const config = {
           autoCollapseCategories: true,
           hideable: true,
         },
-      },
-      announcementBar: {
-        id: "feedback_form",
-        content:
-          'This is a demonstration that we can put a pop-up message here! Even <a target="_blank" rel="noopener noreferrer" href="#">links</a>',
-        backgroundColor: "#fafbfc",
-        textColor: "#091E42",
-        isCloseable: true,
       },
       navbar: {
         title: `${title}`,
