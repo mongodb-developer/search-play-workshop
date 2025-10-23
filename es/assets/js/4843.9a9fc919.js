@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksearch_play_workshop=self.webpackChunksearch_play_workshop||[]).push([["4843"],{2502:function(e,c,r){r.d(c,{createArchitectureServices:()=>s.S});var s=r(6252);r(1310)}}]);
