@@ -2,7 +2,7 @@
 
 # Atlas Search Fundamentals
 
-You can access the online version on the Intro Lab [here](https://mongodb-developer.github.io/search-play-workshop/)
+Access the online version of the [Atlas Search Fundamentals lab](https://mongodb-developer.github.io/search-play-workshop/).
 
 ### Website
 
