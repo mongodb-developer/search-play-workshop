@@ -156,9 +156,29 @@ const config = {
         theme: { light: "neutral", dark: "forest" },
       },
     }),
-  future: {
-    experimental_faster: true,
-  },
+  
+    future: {
+        v4: {
+            removeLegacyPostBuildHeadAttribute: true,
+            useCssCascadeLayers: true
+        },
+
+        experimental_faster: {
+            swcJsLoader: true,
+            swcJsMinimizer: true,
+            swcHtmlMinimizer: true,
+            lightningCssMinimizer: true,
+            rspackBundler: true,
+            rspackPersistentCache: true,
+            ssgWorkerThreads: true,
+            mdxCrossCompilerCache: true
+        },
+
+        experimental_storage: {
+            type: "localStorage",
+            namespace: true
+        }
+    },
   markdown: {
     mermaid: true,
   },
