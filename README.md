@@ -1,8 +1,8 @@
 [![.github/workflows/deploy.yml](https://github.com/mongodb-developer/search-play-workshop/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/mongodb-developer/search-play-workshop/actions/workflows/deploy.yml)
 
-# Atlas Search Fundamentals
+# MongoDB Search Fundamentals
 
-Access the online version of the [Atlas Search Fundamentals lab](https://mongodb-developer.github.io/search-play-workshop/).
+Access the online version of the MongoDB [Search Fundamentals lab](https://mongodb-developer.github.io/search-play-workshop/).
 
 ### Website
 
