@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     illustration: 'img/analytics.png',
     description: (
       <>
-        Learn how to leverage Atlas Search to create powerful and flexible search functionality for your applications.
+        Learn how to leverage MongoDB Search to create powerful and flexible search functionality for your applications.
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     illustration: 'img/database.png',
     description: (
       <>
-        Experiment with search queries in real-time using the Atlas Search Playground, without the need to set up your own cluster.
+        Experiment with search queries in real-time using the MongoDB Search Playground, without the need to set up your own cluster.
       </>
     ),
   },

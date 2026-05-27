@@ -12,13 +12,13 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">Atlas Search Fundamentals</h1>
+        <h1 className="hero__title">MongoDB Search Fundamentals</h1>
         <p className="hero__subtitle">the workshop</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/welcome">
-            Start the Atlas Search Fundamentals Workshop
+            Start the MongoDB Search Fundamentals Workshop
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Learn the fundamentals of Atlas Search in this interactive workshop">
+      description="Learn the fundamentals of MongoDB Search in this interactive workshop">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

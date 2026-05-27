@@ -12,7 +12,7 @@ There are several ways in which strings can be used:
   * Faceting (not covered in this workshop)
   * Highlighting (not covered in this workshop)
 
-A BSON `string` field in your collection can be mapped into one or more of the string-supporting Atlas Search types. A `dynamic: true` mapping maps all `string` field in one way: as full-text fields analyzed with `lucene.standard`. This analyzed textual field type is called `string`. An Atlas Search field indexed as string can only be queried by certain operators meant for full text queries. However, let's first cover the most basic way a string field can be indexed and used: as-is. In order to index a string field as its exact or normalized value and make use of `equals` and `in` operators to query it as the exact or normalized value, it must be statically mapped to type `token`.
+A BSON `string` field in your collection can be mapped into one or more of the string-supporting MongoDB Search types. A `dynamic: true` mapping maps all `string` field in one way: as full-text fields analyzed with `lucene.standard`. This analyzed textual field type is called `string`. An MongoDB Search field indexed as string can only be queried by certain operators meant for full text queries. However, let's first cover the most basic way a string field can be indexed and used: as-is. In order to index a string field as its exact or normalized value and make use of `equals` and `in` operators to query it as the exact or normalized value, it must be statically mapped to type `token`.
 
 ## `token`
 

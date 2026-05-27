@@ -9,9 +9,9 @@ const workshopName = 'search-play-workshop';
 const organizationName = "mongodb-developer";
 
 // Main page config
-const title = "Atlas Search Fundamentals";
+const title = "MongoDB Search Fundamentals";
 const tagLine = "Hands-on workshop";
-const startButtonTitle = "Enter the Atlas Search Fundamentals Workshop";
+const startButtonTitle = "Enter the MongoDB Search Fundamentals Workshop";
 const favicon = "img/favicon.svg"
 
 // Main Page Features

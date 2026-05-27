@@ -13,7 +13,7 @@ A Lucene index encapsulates specialized data structures unique to each type of d
   * Vectors: Hierarchical Navigable Small Worlds (HNSW) data structure
   * Text: via inverted indexes
 
-What Lucene, and Atlas Search, call an "index" is really a collection of separate individual
+What Lucene, and MongoDB Search, call an "index" is really a collection of separate individual
 per-field data structures.
 
 Lucene is designed for both fast searches and speedy indexing. The indexing speed derives from its
@@ -24,7 +24,7 @@ and less, segments over time.
 
 A single Lucene index can handle up to 2 billion documents. There is generally a 1-1 correspondence
 between documents in your collection to Lucene documents, with the exception of nested documents
-mapped as `embeddedDocuments` (a topic covered later). To differentiate the terminology, Atlas Search 
+mapped as `embeddedDocuments` (a topic covered later). To differentiate the terminology, MongoDB Search 
 calls the documents in Lucene index "index objects". See
 [index size and configuration doc](https://www.mongodb.com/docs/atlas/atlas-search/performance/index-performance/#index-size-and-configuration)
 for more details.
@@ -52,7 +52,7 @@ Lucene queries leverage the data structures built at index-time to quickly find,
 documents. The synergy "index intersection" shines when searching across multiple fields in a single
 query. 
 
-Atlas Search translates its search operators directly to Lucene's `Query` API.
+MongoDB Search translates its search operators directly to Lucene's `Query` API.
 
 ## Resources
 
